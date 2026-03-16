@@ -4,11 +4,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 1. What was broken when you started?
 
-- What did the game look like the first time you ran it?
-- List at least two concrete bugs you noticed at the start  
-  (for example: "the secret number kept changing" or "the hints were backwards").
-
----
+When I first played the game, the hints were all backward. For example, the secret number was 32 and when I guessed 1, it suggested guessing lower. Also, only every other guess is getting recorded in guess history, when each guess should have been recorded. As a result, the number of attempts remaining were also off - the number of remaining attempts decreased every other attempt as well. The attempts remaining also started at 7 even though 8 attempts are allowed. Also, the "Hard" level has a smaller guess range (1-50) than the "Normal" level (1-100) when the opposite should be true. Point values also did not decrease consistently -- for example, if the same guess was submitted repeatedly, the number of attempts decreased but the score didn't. 5 points should have been deducted for each incorrect answer.
 
 ## 2. How did you use AI as a teammate?
 
