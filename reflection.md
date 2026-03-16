@@ -8,9 +8,7 @@ When I first played the game, the hints were all backward. For example, the secr
 
 ## 2. How did you use AI as a teammate?
 
-- Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
-- Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-- Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
+I primarily used Claude and ChatGPT for this project. One AI suggestion that was correct was the changes it suggested for the issue with higher vs lower hints. Specifically, it identified that the reverse hints were being given and swapped the messages. I verified this by reading the suggestion and also the existing pytests. One AI suggestion that was incorrect was when it tried to change a variety of factors related to streamlit when all I wanted to do was set the starting number of attempts to 0. To my understanding, it was overcomplicating the situation so I changed it manually. 
 
 ---
 
