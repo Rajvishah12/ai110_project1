@@ -20,8 +20,9 @@ I primarily used Claude and ChatGPT for this project. One AI suggestion that was
 
 - How did you decide whether a bug was really fixed?
 I decided whether a bug was really fixed by playing the game multiple times after tentative fixes and running pytests. For example, for the higher vs lower fixed, I played the game several times with different guesses, noting the result I expected and the result I saw. I also ran the pytests, making sure the "Too High" and "Too Low" responses matched what was expected.
-- Describe at least one test you ran (manual or using pytest)  
-  and what it showed you about your code.
+
+- Describe at least one test you ran (manual or using pytest) and what it showed you about your code.
+Manually, I tried several guesses to make sure the hints were showing correctly based on what was being guessed. I tried versions where I guessed all lower, all higher, alternating, guessing correctly, etc. By doing so, I tried to cover each possible case. This showed me that my updated code was working correctly. I used pytest as well but since pytest just checked individual values, I wanted to make sure there was nothing weird going on with guesses in different orders.
 
 - Did AI help you design or understand any tests? How?
 As directed, I used Copilot to generate my pytests. Specifically, I used it to help write the update_score tests since the check_guess tests already existed. I was also having some issues with importing logic_utils so Copilot suggested a fix for that so I would be able to run the tests as well. 
@@ -32,9 +33,13 @@ As directed, I used Copilot to generate my pytests. Specifically, I used it to h
 
 - In your own words, explain why the secret number kept changing in the original app.
 I don't know how to answer this question because upon originally cloning the app, the secret number did not keep changing for me.
+
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+Using session state allows you to store values between runs of code so values don't get re-initialized. Without this, it is likely that values like secret number would constantly update.
 
 - What change did you make that finally gave the game a stable secret number?
+I don't know how to answer this question because upon originally cloning the app, the secret number did not keep changing for me.
+
 
 ---
 
